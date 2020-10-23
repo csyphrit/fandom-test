@@ -1,0 +1,126 @@
+.App {
+	background-image: url('assets/talent-calc-bg.png');
+	background-repeat: repeat;
+	color: #ffffff;
+	height: 100vh;
+
+	header {
+		font-size: 2em;
+		padding: 20px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.paths {
+		float: left;
+		padding: 20px;
+		width: 65%;
+
+		div {
+			display: inline;
+		}
+
+		table {
+			margin-bottom: 30px;
+		}
+
+		.path-name {
+			padding: 0 50px;
+			text-transform: uppercase;
+		}
+
+		.icon {
+			background: url('assets/talent-icons-sprite.png') 0 0;
+			border: 2px solid #6eacea;
+			display: inline-block;
+			height: 50px;
+			width: 50px;
+
+			&.boatmaybeidk {
+				background-position-x: 200px;
+			}
+
+			&.cake {
+				background-position-x: 100px;
+			}
+
+			&.crown {
+				background-position-x: 150px;
+			}
+
+			&.lightning {
+				background-position-x: 300px;
+			}
+
+			&.silverware {
+				background-position-x: 50px;
+			}
+
+			&.skull {
+				background-position-x: 350px;
+			}
+
+			&.snorkel {
+				background-position-x: 250px;
+			}
+
+			&.stack {
+				background-position-x: 0;
+			}
+
+			&.off {
+				background-position-y: 50px;
+				border-color: #666;
+			}
+		}
+
+		.icon-spacer .bar {
+			background-color: #333;
+			border-bottom: 2px solid #666;
+			border-top: 2px solid #666;
+			display: inline-block;
+			height: 15px;
+			margin-bottom: 15px;
+			width: 100px;
+
+			&.off {
+				background-color: #1b1c1d;
+				border-color: #222425;
+			}
+		}
+	}
+
+	.points {
+		float: right;
+		font-size: 2em;
+		padding-top: 55px;
+		text-align: center;
+		width: 30%;
+
+		span {
+			display: block;
+
+			&.points-label {
+				color: #395066;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.App {
+		.points, .paths {
+			float: none;
+			width: 100%;
+
+			.path-name {
+				padding: 0 20px 0 0;
+			}
+
+			.icon-spacer .bar {
+				margin-bottom: 0;
+				width: 20px;
+			}
+		}
+	}
+}
